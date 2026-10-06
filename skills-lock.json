@@ -1,6 +1,522 @@
 {
   "version": 1,
   "skills": {
+    "acquisition-channels": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/acquisition-channels/SKILL.md",
+      "computedHash": "5ba14e507ad98e8537f073ea51fcefd2e55a29442e0c3e112c6db2ac11a5e0d2"
+    },
+    "ai-assisted-prototyping": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/ai-assisted-prototyping/SKILL.md",
+      "computedHash": "13634ac33372be08b02902bb2301e83f8e22327a1ae05dc00847a9c3e11c7634"
+    },
+    "ai-evals": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/ai-evals/SKILL.md",
+      "computedHash": "76c0354bc6205f0854e3e8e989d671d5c92ee204e4ad92463b78b22c7d928fda"
+    },
+    "ai-native-ux": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/ai-native-ux/SKILL.md",
+      "computedHash": "a3adece2d71948396935f31521bb1e472acdedc6d39abbaa80795bd60b4550a2"
+    },
+    "ai-product-strategy": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/ai-product-strategy/SKILL.md",
+      "computedHash": "5db9cc68c720ecb1464be336681cec50708f73337cf68b30ac9e6a18f73624bb"
+    },
+    "analyzing-user-feedback": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/analyzing-user-feedback/SKILL.md",
+      "computedHash": "0d880d12eff9b28908b8a9a3f272e2d3e233b6c0f43e837e1ead7cd28185f58b"
+    },
+    "animate": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "skillPath": "skills/animate/SKILL.md",
+      "computedHash": "7598d33e7f60dd5c24531eaaa897621cc3bdb48e8050324211627973bc59c4ce"
+    },
+    "animate-expo": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "skillPath": "skills/animate-expo/SKILL.md",
+      "computedHash": "5de09593d564091f9db60aabede7bed760251e118548272050a247c653c417d2"
+    },
+    "animation-vocabulary": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "skillPath": "skills/animation-vocabulary/SKILL.md",
+      "computedHash": "0058036865ecbb864fd0c4132efcc62425355d6e99c7e6ef6a936742d62a5dea"
+    },
+    "apple-design": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "skillPath": "skills/apple-design/SKILL.md",
+      "computedHash": "0190417d092a0df447b000154e39733ea6d97efad6d3bec8a6ce3845aeb88914"
+    },
+    "ask-matt": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/ask-matt/SKILL.md",
+      "computedHash": "16554b785353aabf3880228755d317a3193a8359772f25ecb5f2a1f762d6e12d"
+    },
+    "ask-sonner": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "skillPath": "skills/ask-sonner/SKILL.md",
+      "computedHash": "8bd257b845985f4b35b603b510a126604176521094af79c4b7347ffeb8a8f7ab"
+    },
+    "break-ui": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "skillPath": "skills/break-ui/SKILL.md",
+      "computedHash": "60ada67662925f4df5e3c6ff41cac3ab241b66f8898100a5ffcd7ba7196cb868"
+    },
+    "breaking-into-product": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/breaking-into-product/SKILL.md",
+      "computedHash": "b9180c5a248012c7d4be54de1e9260b1d5b37169bd6f5f8527ac34ac00fbbcf9"
+    },
+    "building-a-promotion-case": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/building-a-promotion-case/SKILL.md",
+      "computedHash": "cd6ffb311d71dac67bc9e71206eca1a4e2b9b9b574612c4a636205db008965b9"
+    },
+    "building-growth-team": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/building-growth-team/SKILL.md",
+      "computedHash": "8d98950788c84295321a8d84a18e50a27a6d3a2bd2f061061dfeedb0cd52566e"
+    },
+    "building-with-ai-agents": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/building-with-ai-agents/SKILL.md",
+      "computedHash": "c3db798fb6e71d3cf87d2c1c2b5bbf81cec369b93bd7ab6413fc9331223d202b"
+    },
+    "career-transitions": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/career-transitions/SKILL.md",
+      "computedHash": "b6c9db12a31127b619916888679886f5db3bb7997863425d4dbe470b66520b91"
+    },
+    "chief-of-staff": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/in-progress/chief-of-staff/SKILL.md",
+      "computedHash": "60b34cb86626421d1bae61e9174f7600e4521a6d0103b3ca49ccfce3ce6a2fb7"
+    },
+    "claude-handoff": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/in-progress/claude-handoff/SKILL.md",
+      "computedHash": "f8c4754a25aa4e12601ce69db4388bb0d30ca526b225351180c5b0d2a4649a95"
+    },
+    "coaching-development": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/coaching-development/SKILL.md",
+      "computedHash": "f3cdfd941444937c979d1aceadbecb582e75893b3947eaf73c6e7e1310a5925c"
+    },
+    "code-review": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/code-review/SKILL.md",
+      "computedHash": "caa9a086baaf9e0f7cd71f64edfa83da6821c05e826b083221f3d02e3d6a1905"
+    },
+    "codebase-design": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/codebase-design/SKILL.md",
+      "computedHash": "b2888e4f4e8c0af3bfd557575a64b905c44e6248c3101d72077816882b3a92b9"
+    },
+    "competitive-strategy": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/competitive-strategy/SKILL.md",
+      "computedHash": "3d0f477fc719d70cbb75a58f12b76406eab45e7f333a1237fe7c411f7d4196de"
+    },
+    "continuous-discovery": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/continuous-discovery/SKILL.md",
+      "computedHash": "dc4d68fb68067beed49cec214d75615ad7a13a13deb8a1deed2f53df1011bdb1"
+    },
+    "customer-interviews": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/customer-interviews/SKILL.md",
+      "computedHash": "5ea837efeebd598aa9305c4f062688fbb2a23ff214109089be07a9e802d236a4"
+    },
+    "defining-icp": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/defining-icp/SKILL.md",
+      "computedHash": "1f810bd1e9b92974d3903482e048d261155c3e3b7273b7f40a5aab1d3df022d3"
+    },
+    "defining-product-strategy": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/defining-product-strategy/SKILL.md",
+      "computedHash": "94dec7eaf0547989e72b83970e6a51731103a65d3363e1205b897f45e46783f4"
+    },
+    "diagnosing-bugs": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/diagnosing-bugs/SKILL.md",
+      "computedHash": "b35c6a6e37c61ca3169532fbab2300dea26f2ad190e1d2dac065800b8b2bb0aa"
+    },
+    "domain-modeling": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/domain-modeling/SKILL.md",
+      "computedHash": "b3eb40152b81f0c98fd2095a023c019452dbdce56f7540cc67fece2972db8369"
+    },
+    "emil-design-eng": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "skillPath": "skills/emil-design-eng/SKILL.md",
+      "computedHash": "51f2537e04d15911b41d78e2de24c36a0e26d41beae15e82a954fe5496a5eda9"
+    },
+    "engineering-health": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering-health/SKILL.md",
+      "computedHash": "3acf6e631804356487ba66240671a91cd468ae7fe343aa0743a04cf99f453a9d"
+    },
+    "enterprise-sales-motion": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/enterprise-sales-motion/SKILL.md",
+      "computedHash": "fea37fdc3c05d2ac57d1ef98d751ca668cf21a8b8464829216cb6bf15d882be1"
+    },
+    "evaluating-startup-ideas": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/evaluating-startup-ideas/SKILL.md",
+      "computedHash": "8daaaa5cca962dc71ff16ee872977496fe9ea652f6653acfb14ce54d528dfc08"
+    },
+    "evaluating-trade-offs": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/evaluating-trade-offs/SKILL.md",
+      "computedHash": "e78ebb9b6431ec488959c1b4112953efee6a0567ac655907d558968ccb77b1f1"
+    },
+    "executive-communication": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/executive-communication/SKILL.md",
+      "computedHash": "ee2073eb5bb506bea12ff3f60a4232b4852a0fe8b83aa8ff06347c8b2834395e"
+    },
+    "find-animation-opportunities": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "skillPath": "skills/find-animation-opportunities/SKILL.md",
+      "computedHash": "465d087c41768e4f14ed640dd049036009f613feb55baaa5831b68b33178f9d2"
+    },
+    "first-b2b-customers": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/first-b2b-customers/SKILL.md",
+      "computedHash": "4ffe6e1b61c42699d3ebd059d29ab08b6dddd1e79b9215047b1b87451b2cf48e"
+    },
+    "fixing-underperforming-teams": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/fixing-underperforming-teams/SKILL.md",
+      "computedHash": "2d7af11e9a3073d3dad9c2e65ae14c1a08417b1cd6b0189becf73e4cf51066c2"
+    },
+    "founder-psychology": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/founder-psychology/SKILL.md",
+      "computedHash": "d41b462517a5e52ce44764ae42a1222df2c82f1047357508c049ba833f42c571"
+    },
+    "founder-sales": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/founder-sales/SKILL.md",
+      "computedHash": "4e2ba491b26e733aa9945b7daf0e3dfb13eda8328ac7bfb7adfebd8f575ffb7c"
+    },
+    "founding-exec-team": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/founding-exec-team/SKILL.md",
+      "computedHash": "cb36822bd6e5b358e6881c82fcbd7b63f079bcde2289e7d5dcfa72c3dea50a24"
+    },
+    "fundraising": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/fundraising/SKILL.md",
+      "computedHash": "f3274af727a0c745ee2b496376d4d2cc60026a457cd8c81a645dee6077c6652f"
+    },
+    "git-guardrails-claude-code": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/misc/git-guardrails-claude-code/SKILL.md",
+      "computedHash": "ccf581d304132095c2787b0a3bcb7b4ff125863c9f796fb16311d8f1cacef470"
+    },
+    "giving-feedback": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/giving-feedback/SKILL.md",
+      "computedHash": "20a70eb97edc3562af7d8cff1e5cd49220698ce37dc25b89d7714a4f1a0c0854"
+    },
+    "goal-setting-okrs": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/goal-setting-okrs/SKILL.md",
+      "computedHash": "8c31d0e7f30df124f786d796b4cb4b715e7d6b47e5e0d46a7c10343a004615b0"
+    },
+    "grill-me": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/grill-me/SKILL.md",
+      "computedHash": "9cdbb4b8f7a3aeaef82e6230c9e823500d4a8a1214c726cf342cf9829d34fc7d"
+    },
+    "grill-with-docs": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/grill-with-docs/SKILL.md",
+      "computedHash": "35e62aa423aaeab6a414bcac273f56dfb17802ef2334b41b6a3b00f28196c8cf"
+    },
+    "grilling": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/grilling/SKILL.md",
+      "computedHash": "4dd886b0196bf43729d954ae326016f2bd9f5f79d892500b407c33a753362f14"
+    },
+    "growth-experimentation": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/growth-experimentation/SKILL.md",
+      "computedHash": "7e452147897f90928f1a950a6f71875ebc5a2e889afb0c10bc0f76ffa0452028"
+    },
+    "growth-model": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/growth-model/SKILL.md",
+      "computedHash": "1b09ac52155b420ac016389119110dd80133f291ce933a0afd6c9fd82759ba1e"
+    },
+    "handoff": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/handoff/SKILL.md",
+      "computedHash": "20e5f4afdef502637510bc5c64d27645d3c85c88df9cb006824bbb0980166319"
+    },
+    "high-stakes-decisions": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/high-stakes-decisions/SKILL.md",
+      "computedHash": "39018ba14b6cd7b741996780c6f4bec4e7a52ce8368a433f93d340f9516e06a3"
+    },
+    "hiring-product-talent": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/hiring-product-talent/SKILL.md",
+      "computedHash": "0e58f10bced63ed86e925096ff5e4d3beeb628131626f233e11b3679e81f280c"
+    },
+    "idea-validation": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/idea-validation/SKILL.md",
+      "computedHash": "c6e4a127e74c6f1fe61c339c487b7e1b117a4e398c96dace8f3b3b27f09a4296"
+    },
+    "implement": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/implement/SKILL.md",
+      "computedHash": "2139cfedf24791adbc839aaab6019cff158af1e28bfead020ec6e0ce01b3e74d"
+    },
+    "implement-spec": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/implement-spec/SKILL.md",
+      "computedHash": "f0db7dafd236fff9dc40da566cb72bbad6802674f64617b06959b00a436c7d5b"
+    },
+    "improve-animations": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "skillPath": "skills/improve-animations/SKILL.md",
+      "computedHash": "524ea241e41d58bbdd8e288700fe24f5725e2a2f3ae7186ad7cebf9055058356"
+    },
+    "improve-codebase-architecture": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/improve-codebase-architecture/SKILL.md",
+      "computedHash": "ac2c94885f34ff8492dc12aa4543182f661f32ea1722b8d6b6c2c7045af33ae3"
+    },
+    "international-expansion": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/international-expansion/SKILL.md",
+      "computedHash": "55c54bb3b9874c596f3e518e7873bacdf317034b3aeec6a7d23000ed91227bec"
+    },
+    "interviewing-evaluating-candidates": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/interviewing-evaluating-candidates/SKILL.md",
+      "computedHash": "ce27c3d2c771cfe8cb6092bee23543a124d691aac7ac2c3d04263a8dbeb5705c"
+    },
+    "launch-planning": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/launch-planning/SKILL.md",
+      "computedHash": "07596d7114aa2169c9927d162a4be7dee1aeb562610f7938e002685069aff92b"
+    },
+    "leading-org-change": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/leading-org-change/SKILL.md",
+      "computedHash": "013c7740d05363cb6f741584a0269d49e183d5b2341a881cf98c33c1c05a5713"
+    },
+    "loop-me": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/in-progress/loop-me/SKILL.md",
+      "computedHash": "72e01a16929dbf6583afc469a49d64b28b1be4a6034c900decd94cd5a69ba6e6"
+    },
+    "managing-up": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/managing-up/SKILL.md",
+      "computedHash": "b410a70dbba073da98e68b465f6282cbd4246b7c522fdfac182ee1d00d1a954e"
+    },
+    "marketing-org-and-stack": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/marketing-org-and-stack/SKILL.md",
+      "computedHash": "28b2fc7fb209fb963d06f3d7ef0ed5cefc7b4f3053cbe4ee662b80e98e30dcd6"
+    },
+    "marketplace-fundamentals": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/marketplace-fundamentals/SKILL.md",
+      "computedHash": "eb14c969fa315aef0f5c2da1c44f3905fe86474f2516969a1d75b9b18732581b"
+    },
+    "marketplace-liquidity-take-rates": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/marketplace-liquidity-take-rates/SKILL.md",
+      "computedHash": "b122cdb4c6900b6c168bd40020fc84c6f9cb0139054b8cfdfcf536b7a45b6e31"
+    },
+    "measuring-pmf": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/measuring-pmf/SKILL.md",
+      "computedHash": "0c1bee2927085e6350adfb06c4dc3f789fd9a9c927415fe5ec462fc0b479772d"
+    },
+    "migrate-radix-to-base": {
+      "source": "shadcn/ui",
+      "sourceType": "github",
+      "skillPath": "skills/migrate-radix-to-base/SKILL.md",
+      "computedHash": "e1f2030ee5059be3dff0812ca0e4b995ee9fa3132176f049ebe6c90346a6755e"
+    },
+    "migrate-to-shoehorn": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/misc/migrate-to-shoehorn/SKILL.md",
+      "computedHash": "6397731ced114f3657aa88b55ed13d1344a56d77ca449c568e3200c21740fa99"
+    },
+    "mobile-native": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "skillPath": "skills/mobile-native/SKILL.md",
+      "computedHash": "f221cea36642168df6d3d6d7f236237cbf1ae669138ff7df07775674223d49ad"
+    },
+    "naming-and-branding": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/naming-and-branding/SKILL.md",
+      "computedHash": "fc4ebde35f7d4fb1e3e1590f34fa722c67ad21a50e49d5adbb7cf68bf1385476"
+    },
+    "negotiating-compensation": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/negotiating-compensation/SKILL.md",
+      "computedHash": "ab33882427379b680eb8adcb4d5a4d38339f68623ec2eacf1b530f0bb6be6412"
+    },
+    "north-star-metrics": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/north-star-metrics/SKILL.md",
+      "computedHash": "a342fa9f8050109fc96022685bed837c5170cf5fd88540a78cd6f06ff072be67"
+    },
+    "org-design": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/org-design/SKILL.md",
+      "computedHash": "84abdc287f82c9ed696a2e3ffcb56a3c58690a6f627b6ab0dd9c01452fd323e5"
+    },
+    "personal-brand-network": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/personal-brand-network/SKILL.md",
+      "computedHash": "0fc8165a97234046b2067350af88a3b162ded03e00552e96414f1659202e2a81"
+    },
+    "pick-ui-library": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "skillPath": "skills/pick-ui-library/SKILL.md",
+      "computedHash": "5d2a77bf0ecafbda85aa95fb49999b6d77945d9066ec83d970b62e5b388cd686"
+    },
+    "planning-cadence": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/planning-cadence/SKILL.md",
+      "computedHash": "817a3b8c9137b869c46a25216303ce1c0e5ab55bd8454bce7b0c820be7932357"
+    },
+    "plg-fundamentals": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/plg-fundamentals/SKILL.md",
+      "computedHash": "bae72f27ddb75a5e5939af0c0aff28ea192564352f0ffdac42d7bf6bd8f88bee"
+    },
+    "plg-sales-integration": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/plg-sales-integration/SKILL.md",
+      "computedHash": "3a557d1109fc0b8470c260ae38c3fa0cca37dbd425161abe62d8558aff194c74"
+    },
+    "pm-career-growth": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/pm-career-growth/SKILL.md",
+      "computedHash": "5a5d4488461109a3bd9e8e3286f71a29434d0087bf875554b1b70597a739ff92"
+    },
+    "positioning": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/positioning/SKILL.md",
+      "computedHash": "06da0a19c5d5e7c5e79d0f4c9b4cc7ae902a22641a016b56ef1de79d1111a40e"
+    },
+    "pr": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/pr/SKILL.md",
+      "computedHash": "22a15d4d469344b38e03eb0e95772478393975836289393b1bad3c0febcdc679"
+    },
+    "pr-and-press": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/pr-and-press/SKILL.md",
+      "computedHash": "c7e7a12ae4a4da63efef98f4211690d7032f81b66cb864563306d70463738b18"
+    },
+    "pricing-strategy": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/pricing-strategy/SKILL.md",
+      "computedHash": "6ad8ce3083aba089651bca2d40ca26ecc16bdd69b9a8a9bab9199b08d59ed5ea"
+    },
     "prisma-cli": {
       "source": "prisma/skills",
       "sourceType": "github",
@@ -60,6 +576,264 @@
       "sourceType": "github",
       "skillPath": "prisma-upgrade-v7/SKILL.md",
       "computedHash": "9a65f02d4ae2f3d1e81efb6be888f33a083b1c06d866ff5f762cc30786e4c8ce"
+    },
+    "product-experiments": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/product-experiments/SKILL.md",
+      "computedHash": "fc34afbdd6c10abeab39cbe70d104df985fe682509c9f267818be6e4f3f23aea"
+    },
+    "product-reviews": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/product-reviews/SKILL.md",
+      "computedHash": "742f9272790533173f67d81508f47c68ecee8a350fc1a81b3f79f9dfde1a4e8d"
+    },
+    "product-taste": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/product-taste/SKILL.md",
+      "computedHash": "278dcc3161b9eb8f8fedf422184691b0679acd25b541dbd686d5caad5a517f30"
+    },
+    "product-tool-stack": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/product-tool-stack/SKILL.md",
+      "computedHash": "b91a040260e9fbcc14bdafc4bd1324bc315d0f5008e306711e569dbedfe0e8b7"
+    },
+    "product-vision": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/product-vision/SKILL.md",
+      "computedHash": "1dff14995e6cc5f3fe56fb886d00ae6e1756773c082ed10e6f8440e52005b052"
+    },
+    "prototype": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "skillPath": "skills/prototype/SKILL.md",
+      "computedHash": "77be567d8c946608fdd15e61b62ab383cdf289a194dce2479828b7eda860d3ba"
+    },
+    "public-speaking": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/public-speaking/SKILL.md",
+      "computedHash": "35570283bca7d1e3ccd85f3bc4070cab24d47a349fac99117f2f732a423025d3"
+    },
+    "recovering-from-failure": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/recovering-from-failure/SKILL.md",
+      "computedHash": "8c826d4d31054fc9aceccec0fcdd6ac56421f8fedab343c26255e514882aa947"
+    },
+    "referrals-word-of-mouth": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/referrals-word-of-mouth/SKILL.md",
+      "computedHash": "0cdbcf298a23a79ee2b7a537aa50ea91fb9193699f308ece8f3fe6b96dbdc0d4"
+    },
+    "research": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/research/SKILL.md",
+      "computedHash": "c8c1cba327a6f824b554cd978079a3dadd7406d73174f8fb9bfef58824691970"
+    },
+    "retention-engagement": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/retention-engagement/SKILL.md",
+      "computedHash": "682acfef879b788cf48a9f22d3ea2bbb9e641ed468b700fa18b56d524e213a82"
+    },
+    "retro": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/retro/SKILL.md",
+      "computedHash": "b8d55851a2909e26c2dbb2e8563719c87b3b700559f604e4df344f8c27e21047"
+    },
+    "review-animations": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "skillPath": "skills/review-animations/SKILL.md",
+      "computedHash": "b4e5f0f4fe3e2743c85bf7354108f48a0b9d502cb20ef5c4a9c195da91f93736"
+    },
+    "roadmap-prioritization": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/roadmap-prioritization/SKILL.md",
+      "computedHash": "ef4125ab0f5aa0420e6bc4cba4b3222367b41abe892e16598b1e272b6eafc4d1"
+    },
+    "running-meetings": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/running-meetings/SKILL.md",
+      "computedHash": "75eca7bc1b4f729798a69a200a413e7177e1a37e2cdc73e653b35523e34cf52b"
+    },
+    "scaffold-exercises": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/misc/scaffold-exercises/SKILL.md",
+      "computedHash": "354c91f6dbc9b058632f30594aacb4edc6d25012596585abb00402af8d7ec5e9"
+    },
+    "seo-strategy": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/seo-strategy/SKILL.md",
+      "computedHash": "fe94df89f265e579e552eba5c9d7cf5b5d486ec496de0b79d29f23de6406b816"
+    },
+    "setup-matt-pocock-skills": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "computedHash": "09f2ffc146213ba0d02f385f20e8d340ef04858ba7d90e71963fbd96fdba78d8"
+    },
+    "setup-pre-commit": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/misc/setup-pre-commit/SKILL.md",
+      "computedHash": "7fc7b680161a5cb834b165e36efc2378ff63a1f80df0a9efd18448d366bea98a"
+    },
+    "setup-ts-deep-modules": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/in-progress/setup-ts-deep-modules/SKILL.md",
+      "computedHash": "61508216ede38d8cfa712879197a76f75f4896615dbf7abc3f62571f8f5923cc"
+    },
+    "shadcn": {
+      "source": "shadcn/ui",
+      "sourceType": "github",
+      "skillPath": "skills/shadcn/SKILL.md",
+      "computedHash": "f615de216e085a84e31593ad0fa9062232adc40cd87b7c7ab2b8e49abf6500be"
+    },
+    "shipping-velocity": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/shipping-velocity/SKILL.md",
+      "computedHash": "892ed67cf2f5e67a30a7dba5d2c438339b951e215ba9405f5833784b6b5be1da"
+    },
+    "stakeholder-alignment": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/stakeholder-alignment/SKILL.md",
+      "computedHash": "2aef2ecb01bedab0d5784131b499d12c5b9011a17eb5e2f5222250f44a7c9e5e"
+    },
+    "supply-demand-balance": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/supply-demand-balance/SKILL.md",
+      "computedHash": "37c335fc9a54268e97efa254e0035f5d30a42835d1cb5858eb14682761ec66e0"
+    },
+    "tdd": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/tdd/SKILL.md",
+      "computedHash": "9ce12c4a1e209e557fcf9d02086ade3d7ffdb976186018fc1b063b4164246004"
+    },
+    "teach": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/teach/SKILL.md",
+      "computedHash": "b8a69574c7a019bed84e84313dc8bf02e1d1bf925ba43057d433217c63863206"
+    },
+    "team-culture": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/team-culture/SKILL.md",
+      "computedHash": "0866a3d1022b5cb694eef130ea10b14f2c35c42e7d7d3309849b9b1b672c9f33"
+    },
+    "time-energy-management": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/time-energy-management/SKILL.md",
+      "computedHash": "4bc0ab8f76b668a4883e04704de717369fe0196fb96e5a9c656170297653de3c"
+    },
+    "to-questionnaire": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/to-questionnaire/SKILL.md",
+      "computedHash": "befbec7005695163741a57bc94810dc5048fb766baaa485d5160b1d7f86335c1"
+    },
+    "to-spec": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/to-spec/SKILL.md",
+      "computedHash": "3fa1a0695d4ea242fae9e569e4d22aa1788623197abb33bfadafae7315789bbf"
+    },
+    "to-tickets": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/to-tickets/SKILL.md",
+      "computedHash": "bf5e6ebcb4f1272de0c188d5b3901f265a03d1fa9935a21a7a56938e21e2e761"
+    },
+    "triage": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/triage/SKILL.md",
+      "computedHash": "a683e69163e23630f39c05a50fb9d83a3795a6a6fbd317357669e082cd43a158"
+    },
+    "user-onboarding-activation": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/user-onboarding-activation/SKILL.md",
+      "computedHash": "426dfa73fb385ce5019907e9c1ded1d8434283adef4c5dcbaa1c4e3a3f736637"
+    },
+    "wait-what": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/wait-what/SKILL.md",
+      "computedHash": "1921c02ea4046fd8f9c219140780233fe6e22e2fe4442961378da2ac31f3f403"
+    },
+    "wayfinder": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/wayfinder/SKILL.md",
+      "computedHash": "fa790eb4255b13d24d7e33ff4891ccd3d621558cc0ab87ae226777538ea16a8f"
+    },
+    "wizard": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/wizard/SKILL.md",
+      "computedHash": "dee7f1a523994a1e063c69fe09c2f5b4da97a41ad68107722664e6e472cb2423"
+    },
+    "write-swift": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "skillPath": "skills/write-swift/SKILL.md",
+      "computedHash": "f20bb9cf51dbee1900b264820a12f1d3d378dc4d23ac758e7ba9e644c49a2459"
+    },
+    "writing-beats": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/in-progress/writing-beats/SKILL.md",
+      "computedHash": "220b163698de9c1e551b801795cc8ca38132b69018f82188875b3675226fc888"
+    },
+    "writing-for-agents": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/writing-for-agents/SKILL.md",
+      "computedHash": "95da47fc97af998e85b7d7e6d57b3ac76727c1e290cfe9ea09005aacb826959f"
+    },
+    "writing-fragments": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/in-progress/writing-fragments/SKILL.md",
+      "computedHash": "cbd8c4ed24ebc292017831ef76bc8798719b3adcd18f7781a632a37844a1c369"
+    },
+    "writing-prds": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/writing-prds/SKILL.md",
+      "computedHash": "b0f43e9e8e90ab3c1aaab9abb5a44464b62bcd3adc97a4ce4160a86281182197"
+    },
+    "writing-shape": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/in-progress/writing-shape/SKILL.md",
+      "computedHash": "0d0ac1150c4d65f8370ad194fc097ee17855247f6e5943d05f075806980e7401"
+    },
+    "written-communication": {
+      "source": "RefoundAI/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/written-communication/SKILL.md",
+      "computedHash": "64d55b997eb5ca3adf0e631d6b915a61b99cd1962b78b40688c3d4b2493ece69"
     }
   }
 }

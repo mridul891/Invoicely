@@ -1,26 +1,131 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme inline {
+  /* Brand & Accent */
+  --color-primary: #181d26;
+  --color-primary-active: #0d1218;
+
+  /* Surface */
+  --color-canvas: #ffffff;
+  --color-surface-soft: #f8fafc;
+  --color-surface-strong: #e0e2e6;
+  --color-surface-dark: #181d26;
+  --color-surface-dark-elevated: #1d1f25;
+  --color-hairline: #dddddd;
+
+  /* Text */
+  --color-ink: #181d26;
+  --color-body: #333840;
+  --color-muted: #41454d;
+  --color-border-strong: #9297a0;
+  --color-on-primary: #ffffff;
+  --color-on-dark: #ffffff;
+
+  /* Signature Card Surfaces */
+  --color-signature-coral: #aa2d00;
+  --color-signature-forest: #0a2e0e;
+  --color-signature-cream: #f5e9d4;
+  --color-signature-peach: #fcab79;
+  --color-signature-mint: #a8d8c4;
+  --color-signature-yellow: #f4d35e;
+  --color-signature-mustard: #d9a441;
+
+  /* Semantic */
+  --color-link: #1b61c9;
+  --color-link-active: #1a3866;
+  --color-info: #254fad;
+  --color-info-border: #458fff;
+  --color-success: #006400;
+  --color-success-border: #39bf45;
+
+  /* Radius */
+  --radius-xs: 2px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-pill: 9999px;
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+  --spacing-section: 96px;
+
+  /* Font Families */
+  --font-sans: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "Geist Mono", "SFMono-Regular", Menlo, monospace;
+  --font-inter: var(--font-inter), "Inter Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Typography Tokens */
+  --font-size-display-xl: 48px;
+  --font-size-display-lg: 40px;
+  --font-size-display-md: 32px;
+  --font-size-title-lg: 24px;
+  --font-size-title-md: 20px;
+  --font-size-title-sm: 18px;
+  --font-size-label-md: 16px;
+  --font-size-button: 16px;
+  --font-size-body-md: 14px;
+  --font-size-caption: 14px;
+  --font-size-legal: 13.12px;
+  --font-size-pricing-display: 44.8px;
+  --font-size-pricing-section: 28px;
+  --font-size-pricing-card-title: 20px;
+
+  --font-weight-display-xl: 500;
+  --font-weight-display-lg: 400;
+  --font-weight-display-md: 400;
+  --font-weight-title-lg: 400;
+  --font-weight-title-md: 400;
+  --font-weight-title-sm: 500;
+  --font-weight-label-md: 500;
+  --font-weight-button: 500;
+  --font-weight-body-md: 400;
+  --font-weight-caption: 500;
+  --font-weight-legal: 600;
+  --font-weight-pricing-display: 475;
+  --font-weight-pricing-section: 475;
+  --font-weight-pricing-card-title: 475;
+
+  --line-height-display-xl: 1.1;
+  --line-height-display-lg: 1.2;
+  --line-height-display-md: 1.2;
+  --line-height-title-lg: 1.35;
+  --line-height-title-md: 1.5;
+  --line-height-title-sm: 1.4;
+  --line-height-label-md: 1.4;
+  --line-height-button: 1.4;
+  --line-height-body-md: 1.25;
+  --line-height-caption: 1.35;
+  --line-height-legal: 1.2;
+  --line-height-pricing-display: 1.1;
+  --line-height-pricing-section: 1.2;
+  --line-height-pricing-card-title: 1.3;
+
+  --letter-spacing-title-lg: 0.12px;
+  --letter-spacing-caption: 0.16px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root {
+  --background: #ffffff;
+  --foreground: #333840;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #333840;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-canvas);
+  color: var(--color-body);
+  font-family: var(--font-sans);
 }

@@ -12,6 +12,15 @@ datasource db {
   provider = "postgresql"
 }
 
+enum InvoiceStatus {
+  Draft
+  Sent
+  PartiallyPaid
+  Paid
+  Overdue
+  Cancelled
+}
+
 model User {
   id            String    @id
   name          String
@@ -22,6 +31,7 @@ model User {
   updatedAt     DateTime  @updatedAt
   sessions      Session[]
   accounts      Account[]
+  business      Business?
 
   @@unique([email])
   @@map("user")
@@ -73,4 +83,154 @@ model Verification {
 
   @@index([identifier])
   @@map("verification")
+}
+
+model Business {
+  id      String  @id @default(uuid()) @db.Uuid
+  ownerId String  @unique @map("owner_id")
+  owner   User    @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  name    String
+  email   String
+  phone   String?
+  taxId   String? @map("tax_id")
+  address Json
+
+  // relations 
+  clients  Client[]
+  invoices Invoice[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("business")
+}
+
+model Client {
+  id         String   @id @default(uuid()) @db.Uuid
+  businessId String   @map("business_id") @db.Uuid
+  business   Business @relation(fields: [businessId], references: [id], onDelete: Cascade)
+  name       String
+  email      String?
+  phone      String?
+  address    Json
+  taxId      String?  @map("tax_id")
+
+  // relations 
+  invoices Invoice[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@index([businessId])
+  @@index([businessId, name])
+  @@map("client")
+}
+
+model Invoice {
+  id            String        @id @default(uuid()) @db.Uuid
+  businessId    String        @map("business_id") @db.Uuid
+  business      Business      @relation(fields: [businessId], references: [id], onDelete: Restrict)
+  clientId      String        @map("client_id") @db.Uuid
+  client        Client        @relation(fields: [clientId], references: [id], onDelete: Restrict)
+  invoiceNumber String        @map("invoice_number")
+  status        InvoiceStatus @default(Draft)
+  currency      String        @default("INR")
+
+  issuedAt DateTime  @default(now()) @map("issued_at")
+  dueDate  DateTime? @map("due_date")
+  paidDate DateTime? @map("paid_date")
+
+  // Historical Snapshots so that we can keep track of the invoice even if the client or business details change
+  businessSnapshot Json @map("business_snapshot")
+  clientSnapshot   Json @map("client_snapshot")
+
+  // calculated fields
+  subtotal       Decimal @default(0) @db.Decimal(12, 2)
+  discountAmount Decimal @default(0) @map("discount_amount") @db.Decimal(12, 2)
+  taxTotal       Decimal @default(0) @map("tax_total") @db.Decimal(12, 2)
+  total          Decimal @default(0) @db.Decimal(12, 2)
+  amountPaid     Decimal @default(0) @map("amount_paid") @db.Decimal(12, 2)
+
+  // notes and tems 
+  notes String?
+  terms String?
+
+  // relations
+  items          InvoiceItem[]
+  taxes          InvoiceTax[]
+  paymentDetails InvoicePaymentDetails?
+
+  // updation and creations
+  createdAt DateTime  @default(now()) @map("created_at")
+  updatedAt DateTime  @updatedAt @map("updated_at")
+  deletedAt DateTime? @map("deleted_at")
+
+  @@unique([businessId, invoiceNumber])
+  @@index([businessId])
+  @@index([clientId])
+  @@index([businessId, status])
+  @@index([businessId, issuedAt])
+  @@index([businessId, dueDate])
+  @@map("invoice")
+}
+
+model InvoiceItem {
+  id        String  @id @default(uuid()) @db.Uuid
+  invoiceId String  @map("invoice_id") @db.Uuid
+  invoice   Invoice @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+
+  description String
+  quantity    Decimal @db.Decimal(12, 3)
+
+  unitPrice Decimal @map("unit_price") @db.Decimal(12, 2)
+
+  // GST/HSN Code
+  hsnSac String? @map("hsn_sac")
+
+  discountAmount Decimal @default(0) @map("discount_amount") @db.Decimal(12, 2)
+
+  // Final line amount before invoice-level taxes.
+  total Decimal @db.Decimal(12, 2)
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@index([invoiceId])
+  @@map("invoice_items")
+}
+
+model InvoiceTax {
+  id        String  @id @default(uuid()) @db.Uuid
+  invoiceId String  @map("invoice_id") @db.Uuid
+  invoice   Invoice @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+
+  // CGST, SGST, IGST, etc.
+  label String
+
+  // Example: 9.00 represents 9%.
+  rate Decimal @db.Decimal(5, 2)
+
+  amount Decimal @db.Decimal(12, 2)
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([invoiceId])
+  @@map("invoice_taxes")
+}
+
+model InvoicePaymentDetails {
+  id        String  @id @default(uuid()) @db.Uuid
+  invoiceId String  @unique @map("invoice_id") @db.Uuid
+  invoice   Invoice @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+
+  accountName   String? @map("account_name")
+  accountNumber String? @map("account_number")
+  ifscCode      String? @map("ifsc_code")
+  bankName      String? @map("bank_name")
+  upiId         String? @map("upi_id")
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("invoice_payment_details")
 }

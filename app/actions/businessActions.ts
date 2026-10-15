@@ -1,4 +1,5 @@
 "use server";
+import { redirect } from "next/navigation";
 import { requireUser } from "@/lib/auth/requireUser";
 import { prisma } from "@/lib/prisma";
 import { CreateBusinessInput, CreateBusinessSchema } from "@/schema/business";
@@ -43,7 +44,7 @@ export async function createBusinessAction(input: CreateBusinessInput) {
   //   create the business
 
   try {
-    const business = await prisma.business.create({
+    await prisma.business.create({
       data: {
         name: data.name,
         ownerId: user.id,
@@ -52,16 +53,7 @@ export async function createBusinessAction(input: CreateBusinessInput) {
         taxId: data.taxId,
         address: data.address,
       },
-      select: {
-        id: true,
-        name: true,
-      },
     });
-
-    return {
-      status: true as const,
-      businessId: business.id,
-    };
   } catch (error) {
     if (
       error instanceof Prisma.PrismaClientKnownRequestError &&
@@ -80,4 +72,9 @@ export async function createBusinessAction(input: CreateBusinessInput) {
       error: "Failed to create business",
     };
   }
+
+  // Success — hand navigation to the server so the dashboard layout
+  // re-runs its onboarding guard with fresh data. This throws
+  // NEXT_REDIRECT, so it must stay outside the try/catch above.
+  redirect("/dashboard");
 }

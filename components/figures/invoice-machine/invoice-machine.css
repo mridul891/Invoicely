@@ -1,0 +1,86 @@
+/* The Invoice Machine — premium industrial art direction.
+   Warm ivory card, graphite machinery, brushed-aluminum tops,
+   one emerald accent. Implemented purely as Anatomy kit tokens,
+   so both themes of every part keep working. */
+.imachine .iso-plate {
+  --anatomy-card: #faf6ec;
+  --anatomy-paper: #faf6ec;
+  --anatomy-face: #fffdf6;
+  --anatomy-top: #fffdf8;
+  --anatomy-shade-0: #d9d1bc;
+  --anatomy-shade-1: #e5ddc9;
+  --anatomy-shade-2: #efe8d6;
+  --anatomy-shade-3: #f5efdf;
+  --anatomy-lit-top: #e2f2e8;
+  --anatomy-lit-shade: #c9e5d5;
+  --anatomy-hi: #33312b;
+  --anatomy-mid: #7a7568;
+  --anatomy-lo: #b3ab95;
+  --anatomy-faint: #d6cfb9;
+  --anatomy-lit: #0c8a5f;
+  --anatomy-halo: #7a6f5c;
+  --anatomy-halo-opacity: 0.28;
+  --anatomy-dot: #4c483d;
+  --anatomy-text: #4c483d;
+  --anatomy-muted: #8a8474;
+  --anatomy-strong: #1f1d18;
+}
+
+.imachine-live {
+  outline-offset: 6px;
+}
+.imachine-live:focus-visible {
+  outline: 1px solid var(--anatomy-muted);
+}
+.imachine-needle {
+  stroke-width: 1.1px;
+}
+
+.imachine-progress {
+  height: 3px;
+  margin-top: 14px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--anatomy-faint);
+}
+.imachine-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--anatomy-lit);
+}
+
+.imachine-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+.imachine-actions button {
+  font-family: var(--anatomy-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid var(--anatomy-lo);
+  background: transparent;
+  color: var(--anatomy-text);
+  border-radius: 999px;
+  padding: 7px 14px;
+  cursor: pointer;
+}
+.imachine-actions button:hover {
+  border-color: var(--anatomy-hi);
+  color: var(--anatomy-strong);
+}
+.imachine-actions button[aria-pressed="true"] {
+  border-color: var(--anatomy-lit);
+  color: var(--anatomy-strong);
+}
+.imachine-actions .imachine-generate {
+  background: var(--anatomy-lit);
+  border-color: var(--anatomy-lit);
+  color: #fffdf6;
+}
+.imachine-actions .imachine-generate:hover {
+  color: #fffdf6;
+  filter: brightness(1.08);
+}

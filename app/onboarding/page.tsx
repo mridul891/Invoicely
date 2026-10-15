@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Toaster } from "sonner";
 
 import { OnboardingForm } from "@/components/onboarding/BusinessOnboardingForm";
 
@@ -13,8 +12,9 @@ export const metadata: Metadata = {
 export default function OnboardingPage() {
   return (
     <main className="min-h-screen bg-background">
-      {/* Capped + centered: whitespace on the left/right past 1600px */}
-      <div className="mx-auto grid min-h-screen w-full max-w-[1600px] grid-cols-1 lg:grid-cols-2">
+      {/* Capped + centered: whitespace on the left/right past 1600px.
+          On ultra-wide the visual becomes a floating rounded panel. */}
+      <div className="mx-auto grid min-h-screen w-full max-w-[1600px] grid-cols-1 lg:grid-cols-2 2xl:gap-6 2xl:p-6">
         {/* Form column — mobile stacked, tablet roomier, desktop half */}
         <section className="flex items-center justify-center px-5 py-6 sm:px-10 sm:py-8 lg:px-12 lg:py-6 xl:px-16">
           <div className="w-full max-w-md sm:max-w-lg">
@@ -23,7 +23,7 @@ export default function OnboardingPage() {
         </section>
 
         {/* Visual column — full height & width optimized image (desktop+) */}
-        <aside className="relative hidden overflow-hidden bg-muted lg:block">
+        <aside className="relative hidden overflow-hidden bg-muted lg:block 2xl:rounded-2xl">
           <Image
             src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1600&auto=format&fit=crop"
             alt="Business invoicing workspace"
@@ -45,8 +45,6 @@ export default function OnboardingPage() {
           </div>
         </aside>
       </div>
-
-      <Toaster richColors position="bottom-right" />
     </main>
   );
 }

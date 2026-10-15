@@ -1,0 +1,35 @@
+.press {
+  outline-offset: 6px;
+}
+.press:focus-visible {
+  outline: 1px solid var(--anatomy-muted);
+}
+.press-needle {
+  stroke-width: 1.1px;
+}
+.press-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+.press-actions button {
+  font-family: var(--anatomy-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid var(--anatomy-lo);
+  background: transparent;
+  color: var(--anatomy-text);
+  border-radius: 999px;
+  padding: 7px 14px;
+  cursor: pointer;
+}
+.press-actions button:hover {
+  border-color: var(--anatomy-hi);
+  color: var(--anatomy-strong);
+}
+.press-actions button[aria-pressed="true"] {
+  border-color: var(--anatomy-lit);
+  color: var(--anatomy-strong);
+}

@@ -1,7 +1,6 @@
 "use client";
 
 import * as React from "react";
-import { useRouter } from "next/navigation";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Controller, useForm } from "react-hook-form";
 import { toast } from "sonner";
@@ -27,7 +26,6 @@ const inputClassName = "rounded-lg";
 const buttonClassName = "rounded-lg";
 
 export function OnboardingForm() {
-  const router = useRouter();
   const [isPending, startTransition] = React.useTransition();
 
   const form = useForm<CreateBusinessInput>({
@@ -62,18 +60,13 @@ export function OnboardingForm() {
       };
       const result = await createBusinessAction(payload);
 
-      if (result.status) {
-        toast.success("Business created", {
-          description: "Your workspace is ready.",
+      // Reaches here only on failure — success redirects to /dashboard
+      // from inside the server action.
+      if (result) {
+        toast.error("Could not create business", {
+          description: result.error ?? "Please check the form and try again.",
         });
-        router.push("/dashboard");
-        router.refresh();
-        return;
       }
-
-      toast.error("Could not create business", {
-        description: result.error ?? "Please check the form and try again.",
-      });
     });
   }
 

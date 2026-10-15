@@ -1,7 +1,7 @@
-import { Business } from "@/schema/business";
+import { BusinessSchema } from "@/schema/business";
 import { Client } from "@/schema/client";
 
-export function mapBusinessSnapshot(business: Business) {
+export function mapBusinessSnapshot(business: BusinessSchema) {
   return {
     name: business.name,
     email: business.email,

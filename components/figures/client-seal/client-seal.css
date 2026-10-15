@@ -1,0 +1,35 @@
+.seal {
+  outline-offset: 6px;
+}
+.seal:focus-visible {
+  outline: 1px solid var(--anatomy-muted);
+}
+.seal-needle {
+  stroke-width: 1.1px;
+}
+.seal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+.seal-actions button {
+  font-family: var(--anatomy-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid var(--anatomy-lo);
+  background: transparent;
+  color: var(--anatomy-text);
+  border-radius: 999px;
+  padding: 7px 14px;
+  cursor: pointer;
+}
+.seal-actions button:hover {
+  border-color: var(--anatomy-hi);
+  color: var(--anatomy-strong);
+}
+.seal-actions button[aria-pressed="true"] {
+  border-color: var(--anatomy-lit);
+  color: var(--anatomy-strong);
+}
